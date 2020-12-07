@@ -11,10 +11,15 @@ public class DeviceCheck extends Base {
 
 	@Test(description = "This Test Case can verify the presence of all 7 products and its subproducts")
 	public void buy_mac() throws Exception {
-		homepage.selectProduct("mac");
-		device.selectMac("macbook-air");
+		
+		//Apple Main Product Selection
+		homepage.selectVariant("mac");
+		
+		//Apple Sub-Product or Device Selection
+		device.selectItem("macbook-air"); 
+		
+		//Device Landing page name to be verified
 		device.verifyProduct("MacBook Air");
 
 	}
-	
 }

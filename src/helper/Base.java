@@ -19,7 +19,7 @@ public class Base {
 	public static WebDriver initializeDriver() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "//Users//t.somashekar//Desktop//PER//Work//chromedriver");
 		driver = new ChromeDriver();
-		// driver =initializeDriver();
+		driver.manage().window().maximize();
 		driver.navigate().to("https://www.apple.com/be/");
 
 		return driver;

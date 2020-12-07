@@ -9,7 +9,7 @@ public class AppleHomepage extends Base {
 
 	Generic gen = new Generic();
 
-	public void selectProduct(String deviceName) throws Exception {
+	public void selectVariant(String deviceName) throws Exception {
 		By product = By.xpath("//a[@class='ac-gn-link ac-gn-link-" + deviceName + "']");
 		gen.clickElement(product);
 	}

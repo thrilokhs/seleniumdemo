@@ -35,11 +35,11 @@ public class AppleLogin extends Base {
 	}
 
 	public void enterEmail() throws Exception {
-		gen.inputText(email, "3lokhs@gmail.com");
+		gen.inputText(email, "3loktestid@gmail.com");
 	}
 
 	public void enterPassword() throws Exception {
-		gen.inputText(password, "Passw0rd123$");
+		gen.inputText(password, "Testid123$");
 	}
 
 	public void clickSubmit() throws Exception {
@@ -62,6 +62,7 @@ public class AppleLogin extends Base {
 	public void Logout() throws Exception {
 		Thread.sleep(2000);
 		this.clickOption();
+		Thread.sleep(2000);
 		this.clickSignout();
 	}
 }
